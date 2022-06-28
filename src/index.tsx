@@ -1,19 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Post from './components/Post';
+import './index.scss'
+import Home from './pages/Home/Home';
 import reportWebVitals from './reportWebVitals';
-import PostSection from './components/PostSection';
-import Navbar from './components/Navbar';
-import NewsletterSubscriptionForm from './components/NewsletterSubscriptionForm';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Navbar/>
-    <NewsletterSubscriptionForm/>
+    <Home/>
   </React.StrictMode>
 );
 

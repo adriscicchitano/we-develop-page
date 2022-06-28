@@ -1,0 +1,197 @@
+.footerImagesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.footerImagesContainer > * {
+  overflow: hidden;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7.8%;
+}
+
+.footerClutch {
+  display: flex;
+  flex-direction: column;
+}
+
+.clutchReviewsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  order: 0;
+}
+
+.reviewedOn {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.33808px;
+  line-height: 9px;
+  letter-spacing: 0.133433px;
+  text-transform: uppercase;
+
+  color: #282828;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.pointsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.fivePointsBold {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19.8681px;
+  line-height: 29px;
+
+  color: #282828;
+}
+
+.fivePointsDivider {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 29px;
+
+  color: #E1E1E1;
+}
+
+.fivePoints {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 29px;
+
+  color: #282828;
+}
+
+.starsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.reviewsAmount{
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.75089px;
+  line-height: 14px;
+  letter-spacing: 0.205282px;
+
+  color: #282828;
+
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.clutchLogo {
+  width: 62%;
+}
+
+//-------------------------
+
+.companyLinksContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 16px;
+}
+
+.linkContainerTitle{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  color: #363636;
+
+  opacity: 0.5;
+
+  order: 0;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  order: 1;
+}
+
+.linkContainer > * {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;  
+
+  color: #363636;
+}
+
+.linkContainer > *:hover {
+  text-decoration: underline;
+}
+
+.linkContainer > .linkExtension {
+  color: #377DFF;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.multiColumnInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+//-------------------------
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+
+  color: #363636;
+}
+
+.companyLegals {
+  display: flex;
+  flex-direction: row;
+  gap: 10px
+}

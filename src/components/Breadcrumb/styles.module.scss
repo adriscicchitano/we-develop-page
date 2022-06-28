@@ -1,0 +1,48 @@
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    margin-top: 10%;
+}
+
+.breadcrumbTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #363636;
+
+    opacity: 0.5;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.buttonContainer > button{
+    padding: 10px 20px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E1E1E1;
+    border-radius: 100px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.buttonContainer > button:hover{
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
