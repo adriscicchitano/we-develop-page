@@ -17,6 +17,8 @@ import instagram from "../../img/instagram.png"
 import lodash from "lodash"
 export default function Footer() {
   
+  const exampleURL = "https://www.google.com.ar/"
+
   return(
     <div className={classes.footerContent}>
       <div className={classes.footerImagesContainer}>
@@ -52,36 +54,36 @@ export default function Footer() {
             <div className={classes.companyLinksContainer}>
               <span className={classes.linkContainerTitle}>COMPANY</span>
               <div className={classes.linkContainer}>
-                <span>About Us</span>
-                <span>Our Team</span>
-                <span>Blog</span>
-                <span>Career</span>
+                <a href={exampleURL}>About Us</a>
+                <a href={exampleURL}>Our Team</a>
+                <a href={exampleURL}>Blog</a>
+                <a href={exampleURL}>Career</a>
               </div>      
             </div>
             <div className={classes.companyLinksContainer}>
               <span className={classes.linkContainerTitle}>SERVICES</span>
               <div className={classes.linkContainer}>
-                <span>Web Development</span>
-                <span>Staff Augmentation</span>
-                <span>Tailor Made</span>
+                <a href={exampleURL}>Web Development</a>
+                <a href={exampleURL}>Staff Augmentation</a>
+                <a href={exampleURL}>Tailor Made</a>
               </div>      
             </div>
             <div className={classes.companyLinksContainer}>
               <span className={classes.linkContainerTitle}>TECHNOLOGIES</span>
               <div className={classes.multiColumnInfo}>
                 <div className={classes.linkContainer}>
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>Python</span>
-                  <span>AWS</span>
-                  <span>GraphQL</span>
+                  <a href={exampleURL}>React</a>
+                  <a href={exampleURL}>Node.js</a>
+                  <a href={exampleURL}>Python</a>
+                  <a href={exampleURL}>AWS</a>
+                  <a href={exampleURL}>GraphQL</a>
                 </div>
                 <div className={classes.linkContainer}>
-                  <span>Ruby on Rails</span>
-                  <span>PostgreSQL</span>
-                  <span>MongoDB</span>
+                  <a href={exampleURL}>Ruby on Rails</a>
+                  <a href={exampleURL}>PostgreSQL</a>
+                  <a href={exampleURL}>MongoDB</a>
                   <div className={classes.linkExtension}>
-                    <span>See More </span>
+                    <a href={exampleURL}>See More </a>
                     <img src={arrow} alt=""/>
                   </div>  
                 </div>
@@ -92,15 +94,15 @@ export default function Footer() {
               <div className={classes.linkContainer}>
                 <div className={classes.contactUs}>
                     <img src={message} alt=""/>
-                    <span> info@wedevelop.me</span>
+                    <a href={exampleURL}> info@wedevelop.me</a>
                 </div>
                 <div className={classes.contactUs}>
                     <img src={location} alt=""/>
-                    <span> WeDevelop LLC FL 33134, US</span>
+                    <a href={exampleURL}> WeDevelop LLC FL 33134, US</a>
                 </div>
                 <div className={classes.contactUs}>
                     <img src={phone} alt=""/>
-                    <span>+1 (925) 448-6165</span>
+                    <a href={exampleURL}>+1 (925) 448-6165</a>
                 </div>
               </div>      
             </div>

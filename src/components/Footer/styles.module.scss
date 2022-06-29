@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: flex-end;
   gap: 10px;
+  margin-top: 60px;
 }
 
 .footerImagesContainer > * {
@@ -143,21 +144,24 @@
   order: 1;
 }
 
-.linkContainer > * {
+a {
+  text-decoration: none;
+  color: #363636;
+}
+
+.linkContainer > *{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 100%;  
-
-  color: #363636;
+  line-height: 100%;
 }
 
 .linkContainer > *:hover {
   text-decoration: underline;
 }
 
-.linkContainer > .linkExtension {
+.linkContainer > .linkExtension > a {
   color: #377DFF;
 }
 
