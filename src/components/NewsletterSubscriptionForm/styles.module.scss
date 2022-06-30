@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;                   ////////////// NO ME LO ACEPTA 
+  gap: 40px;
   margin: auto;
 }
 
@@ -52,7 +52,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 100%;
   letter-spacing: 1em;
   text-transform: uppercase;
@@ -62,17 +62,28 @@
   order: 0;
 }
 
-.newsletterSubscription {
+@media (min-width: 900px) {
+  .newsletter {
+    font-size: 13px;
+  }
+}
 
+.newsletterSubscription {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 32px;
   line-height: 100%;
   color: #363636;
   text-align: center;
 
   order: 1;
+}
+
+@media (min-width: 900px) {
+  .newsletterSubscription {
+    font-size: 60px;
+  }
 }
 
 hr{
@@ -86,7 +97,7 @@ hr{
 
 .newsletterSubscriptionForm {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
@@ -95,8 +106,13 @@ hr{
   order: 3;
 }
 
-.newsletterSubscriptionFormInput {
+@media (min-width: 900px) {
+  .newsletterSubscriptionForm {
+    flex-direction: row;
+  }
+}
 
+.newsletterSubscriptionFormInput {
   padding: 10px 16px;
   gap: 10px;
 
@@ -107,6 +123,8 @@ hr{
 
   flex: 1;
   order: 0;
+
+  align-self: stretch;
 }
 
 .newsletterSubscriptionFormButton {
@@ -119,4 +137,5 @@ hr{
   border: none;
   
   order: 1;
+  align-self: stretch;
 }
