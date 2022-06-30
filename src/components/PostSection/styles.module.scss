@@ -9,7 +9,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 100%;
   letter-spacing: 1em;
   text-transform: uppercase;
@@ -19,14 +19,26 @@
   opacity: 0.5;
 }
 
+@media (min-width: 900px){
+  .introTitle {
+    font-size: 13px;
+  }
+}
+
 .title {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 100%;
 
   color: #363636;
+}
+
+@media (min-width: 900px){
+  .title {
+    font-size: 40px;
+  }
 }
 
 .divider {
@@ -37,6 +49,14 @@
 }
 
 .postsGrid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 20px
+}
+
+@media (min-width: 900px){
+  .postsGrid {
+    display: grid;
+    gap: 20px
+  }
 }
