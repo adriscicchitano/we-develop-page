@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
@@ -43,23 +44,123 @@
   object-fit: cover;
 }
 
-.menu {
-  right: 20%;
-  left: 28.5%;
-  overflow: hidden;
+.burguerLogo {
+  order:1;
+}
+
+.burguerLogo > button {
+  background: none;
+  border: none;
+}
+
+@media (min-width: 900px){
+  .burguerLogo{
+    display: none;
+  }
+}
+.burguer {
+  position: fixed;
+  z-index: 99;
+  background: #FFFFFF;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.burguer > button {
+  border: none;
+  background: none;
+}
+
+.navbarHeader {
+  display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
-  padding: 0px;
-  gap: 2%;
+  justify-content: space-between;
+  padding: 24px;
+}
 
-  width: 54%;
-  height: 100%;
+.navbarHeader > button {
+  border: none;
+  background: none;
+}
 
-  flex: none;
-  order: 1;
+.burguerContainer {
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.burguerContainer > * {
+  align-self: stretch;
+  margin: 0 24px;
+  background: none;
+}
+
+.linkSeparator {
+  border: 1px solid #E1E1E1;
+  height: 1px;
+  width: 91%;
+  order: 0;
+}
+
+.navigationElement {
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 100%;
+  text-align: start;
+  color: #363636;
+}
+
+.navigationElement:hover {
+  text-decoration: underline;
+}
+
+.dropdownGetInTouch{
+  font-family: 'Inter';
+  font-size: 19px;
+  padding: 10px 20px;
+  width: 91%;
+  background: #377DFF;
+  border-radius: 3px;
+  border: none;
+  color: #FFFFFF;
+}
+
+.menu {
+  display: none;
+}
+
+@media (min-width: 900px){
+  .menu{
+    right: 20%;
+    left: 28.5%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 2%;
+
+    width: 54%;
+    height: 100%;
+
+    flex: none;
+    order: 2;
+  }
 }
 
 .menu > button {
@@ -76,14 +177,20 @@
 }
 
 .getInTouch {
-  border-radius: 3px;
-  background-color: #377DFF;
+  display: none;
+}
 
-  padding: 1%;
-
-  display: flex;
-  justify-content: center;
-  order: 2;
+@media (min-width: 900px){
+  .getInTouch{
+    border-radius: 3px;
+    background-color: #377DFF;
+  
+    padding: 1%;
+  
+    display: flex;
+    justify-content: center;
+    order: 3;
+  }
 }
 
 .getInTouch > button {
