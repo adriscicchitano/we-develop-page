@@ -44,14 +44,32 @@
   object-fit: cover;
 }
 
-.burguer {
-  order: 1;
+.burguerLogo {
+  order:1;
+}
+
+.burguerLogo > button {
+  background: none;
+  border: none;
 }
 
 @media (min-width: 900px){
-  .burguer{
+  .burguerLogo{
     display: none;
   }
+}
+.burguer {
+  position: fixed;
+  z-index: 99;
+  background: #FFFFFF;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .burguer > button {
@@ -59,36 +77,61 @@
   background: none;
 }
 
-.burguerDropdown {
-  list-style-type: none;
-  position: fixed;
+.navbarHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.navbarHeader > button {
+  border: none;
+  background: none;
+}
+
+.burguerContainer {
   padding: 0;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 48px;
+  gap: 24px;
 }
 
-.dropdownElement {
-  text-decoration: none;
+.burguerContainer > * {
+  align-self: stretch;
+  margin: 0 24px;
+  background: none;
+}
+
+.linkSeparator {
+  border: 1px solid #E1E1E1;
+  height: 1px;
+  width: 91%;
+  order: 0;
+}
+
+.navigationElement {
+  border: none;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   font-size: 19px;
   line-height: 100%;
+  text-align: start;
   color: #363636;
 }
 
-.dropdownElement:hover {
+.navigationElement:hover {
   text-decoration: underline;
 }
 
-.dropdowngetInTouch{
+.dropdownGetInTouch{
   font-family: 'Inter';
   font-size: 19px;
   padding: 10px 20px;
-  align-self: stretch;
+  width: 91%;
   background: #377DFF;
   border-radius: 3px;
   border: none;
