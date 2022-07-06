@@ -24,11 +24,11 @@ export default function Navbar() {
           </button>
         </div>
         <div className={classes.menu}>
-          <button onClick={() => {console.log("456")}}>Services</button>
-          <button>About Us</button>
-          <button>Testimonials</button>
-          <button>Blog</button>
-          <button>Career</button>
+          <a href='/coding'>Services</a>
+          <a href='/'>About Us</a>
+          <a href='/'>Testimonials</a>
+          <a href='/'>Blog</a>
+          <a href='/'>Career</a>
         </div>
         <div className={classes.getInTouch}>
           <button>Get in Touch</button>
@@ -42,13 +42,13 @@ export default function Navbar() {
           </button>
         </div>
         <div className={classes.burguerContainer}>
-          <button className={classes.navigationElement}>About Us</button>
+          <a className={classes.navigationElement} href='/coding'>About Us</a>
           <hr className={classes.linkSeparator}/>
-          <button className={classes.navigationElement}>Testimonials</button>
+          <a className={classes.navigationElement} href='/'>Testimonials</a>
           <hr className={classes.linkSeparator}/>
-          <button className={classes.navigationElement}>Blog</button>
+          <a className={classes.navigationElement} href='/'>Blog</a>
           <hr className={classes.linkSeparator}/>
-          <button className={classes.navigationElement}>Career</button>
+          <a className={classes.navigationElement} href='/'>Career</a>
           <hr className={classes.linkSeparator}/>
           <button className={classes.dropdownGetInTouch}>Get in Touch</button>
         </div>

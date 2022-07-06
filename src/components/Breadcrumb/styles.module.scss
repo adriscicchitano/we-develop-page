@@ -4,7 +4,13 @@
   align-items: center;
   justify-content: space-between;
   
-  margin-top: 15%;
+  margin-top: 15% !important;
+}
+
+@media (min-width: 900px){
+  .breadcrumb {   
+    margin-top: 10% !important;
+  }
 }
 
 .breadcrumContent{
