@@ -144,8 +144,6 @@
 
 @media (min-width: 900px){
   .menu{
-    right: 20%;
-    left: 28.5%;
     overflow: hidden;
 
     display: flex;
@@ -163,16 +161,11 @@
   }
 }
 
-.menu > button {
-  border: none;
-  background-color: transparent;
-
-  height: 39%;
-
-  position: relative;
+.menu > a {
+  font-weight: 300;
 }
 
-.menu > button:hover {
+.menu > a:hover {
   font-weight: bold;
 }
 
